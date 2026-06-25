@@ -379,7 +379,7 @@ function registerFlightCommands(bot) {
   // ── /fly — главное меню
   bot.onText(/\/fly$/, async (msg) => {
     await send(msg.chat.id,
-      `✈️ *Джарвис — Авиабилеты*\n\nВыбери действие:`,
+      `✈️ *Fly bot — Авиабилеты*\n\nВыбери действие:`,
       mainMenuKeyboard()
     );
   });
@@ -417,7 +417,7 @@ function registerFlightCommands(bot) {
     // Главное меню
     if (data === 'fly_menu') {
       await edit(chatId, msgId,
-        `✈️ *Джарвис — Авиабилеты*\n\nВыбери действие:`,
+        `✈️ *Fly bot — Авиабилеты*\n\nВыбери действие:`,
         mainMenuKeyboard()
       );
       return;
